@@ -1,0 +1,117 @@
+main.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    font-family: 'Courier Prime', monospace;
+}
+
+section .title{
+    font-family: 'Courier Prime', monospace;
+    font-size: 2rem;
+    text-align: left;
+}
+
+p.bold{
+    font-weight: bold;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-image: linear-gradient(270deg, rgb(179, 87, 253), rgb(82, 25, 128));
+    border-bottom: solid 1px black;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+}
+
+.nav-item {
+    padding: 1rem;
+    box-sizing: border-box;
+    border-left: solid 1px black;
+    color: black;
+    font-size: 20px;
+}
+
+li > a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(56, 29, 100);
+}
+
+li > a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.search input {
+    width:100%;
+    margin:0.5rem 0 0.5rem 0;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid #eeeeee;
+}
+
+.img-container {
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: 70% top;
+}
+
+.img2-container {
+    width: 500px;
+    border-radius: 25px;
+}
+
+.tags > p {
+    display: inline;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.Programming {
+    background-color: rgb(101, 58, 172);
+    color: white;
+}
+
+.Adobe {
+    background-color: rgb(31, 66, 119);
+    color:  white;
+}
+
+.row{
+    display: flex;	
+    flex-wrap:wrap;
+}
+
+[class*="col-"] {
+    flex-basis: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    .col-1 {flex-basis: 8.33%;} /* width works too */
+    .col-2 {flex-basis: 16.66%;}
+    .col-3 {flex-basis: 25%;}
+    .col-4 {flex-basis: 33.33%;}
+    .col-5 {flex-basis: 41.66%;}
+    .col-6 {flex-basis: 50%;}
+    .col-7 {flex-basis: 58.33%;}
+    .col-8 {flex-basis: 66.66%;}
+    .col-9 {flex-basis: 75%;}
+    .col-10 {flex-basis: 83.33%;}
+    .col-11 {flex-basis: 91.66%;}
+    .col-12 {flex-basis: 100%;}
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 3s;
+  }
